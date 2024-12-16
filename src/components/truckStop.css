@@ -1,0 +1,45 @@
+
+.logo-slider-wrapper {
+    overflow: hidden; 
+    position: relative;
+    width: 100%; 
+    /* filter:sepia(30%) saturate(0%) hue-rotate(100deg); */
+    mask-image:linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), transparent 0px, rgb(0, 0, 0) 300px, rgb(0, 0, 0) calc(100% - 300px), transparent);
+    
+  }
+  
+  .logo-slider {
+    display: flex;
+    width: max-content; 
+    animation: scroll 20s linear infinite; 
+   
+  }
+  
+  .logo-img {
+    width: 90px;
+    height: auto;
+    margin: 0 10px; 
+ 
+  }
+
+
+  
+
+@keyframes scroll {
+    from {
+      transform: translateX(0); 
+    }
+    to {
+      transform: translateX(-50%); 
+    }
+  }
+  .logo-list.py-5.bg-light{
+    background-color: white !important;
+  }
+  .logo-list.py-5.bg-light.mt-3 h2{
+    color: black;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  }
+  
+  
