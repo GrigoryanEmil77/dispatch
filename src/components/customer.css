@@ -263,11 +263,6 @@
   margin-right: 60px;
   }
   
-      
-  
-      
-  
-    
       .col.elements {
         flex: 0 0 100%; 
         max-width: 100%;
@@ -295,10 +290,9 @@
       .container-fluid {
          padding: 0 15px;
       }
-      .review-card-body {
-        height: 390px !important; 
+      .card-body.review-card-body{
+        height:410px !important;
       }
-     
   
    
     }
@@ -309,15 +303,46 @@
       padding-top: 20%;
     
     }  
+    .card-body.review-card-body{
+      height:390px !important;
+    }
+  }
+  @media (max-width: 370px) {
+ 
+    .card-body.review-card-body{
+      height:400px !important;
+    }
+  }
+  @media (max-width: 353px) {
+ 
+    .card-body.review-card-body{
+      height:420px !important;
+    }
+  }
     
-   
-       
+    @media (max-width: 326px) {
+      
+      .card-body.review-card-body{
+        height:440px !important;
+      }
+      
+  
+    }
+    @media (max-width: 316px) {
+      
+      .card-body.review-card-body{
+        height:500px !important;
+      }
+      
   
     }
     @media (max-width: 260px) {
       .container-fluid-video {
         padding-top: 50%;
       
+      }
+      .card-body.review-card-body{
+        height:600px !important;
       }
       .col-md-4 img.truck {
         width: 100px;

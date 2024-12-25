@@ -1,11 +1,21 @@
 import React, { useState,useEffect } from "react";
 import './faq.css'
 import axios from 'axios';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const FAQ = () => {
   const [activeFAQs, setActiveFAQs] = useState({});
   const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+  }, []); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,9 +43,9 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container elements mt-5" id="FAQS">
+    <div className="container elements mt-5" id="FAQ">
       <h2 className="text-center mb-4 elements">
-      <h2 class="text-center mb-4 elements"  >{titlefirst} <span>{titlesecond}</span></h2>
+      <h2 class="text-center mb-4 elements" data-aos="flip-up" >{titlefirst} <span>{titlesecond}</span></h2>
       </h2>
       <div className="w-layout-grid faq_list">
         {[
@@ -65,8 +75,8 @@ const FAQ = () => {
             answer:answer5
         },
         ].map((faq) => (
-          <div key={faq.id} className="faq_accordion" >
-            <div className="faq_question">
+          <div key={faq.id} className="faq_accordion" data-aos="fade-right" >
+            <div className="faq_question" data-aos="fade-right">
               <div className="text-size-medium-4 text-weight-bold">
                 {faq.question}
               </div>

@@ -3,9 +3,8 @@
     overflow: hidden; 
     position: relative;
     width: 100%; 
-    /* filter:sepia(30%) saturate(0%) hue-rotate(100deg); */
-    mask-image:linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), transparent 0px, rgb(0, 0, 0) 300px, rgb(0, 0, 0) calc(100% - 300px), transparent);
-    
+    mask-image:linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0), transparent 0px, rgb(0, 0, 0) 300px, rgb(0, 0, 0) calc(100% - 300px), transparent) !important;
+
   }
   
   .logo-slider {

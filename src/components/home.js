@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './home.css'
-// import videobackground from "../videos/24255-341474048_tiny.mp4";
-// import videodispatch from "../videos/Snapinsta.app_video_D94D4C9A6B46F9CF0E58994CDF590698_video_dashinit.mp4";
 
 import axios from 'axios';
 
@@ -93,44 +91,53 @@ const HomeData = () => {
    
        
   return (
-    
-  <section className="elements">
+    <section className="elements">
   <div className="video-background">     
-
-<video
+    <video
       id="myVideo"
       autoPlay
       muted
       loop
       playsInline
       webkit-playsinline
+      x5-playsinline
     >
-      <source src={videobackground}  type="video/mp4" />
+      {videobackground && (
+        <source src={videobackground} type="video/mp4" />
+      )}
       Your browser does not support the video tag.
     </video>
 
     <div className="container-fluid-video elements shift-down" id="Home">
-      <div className="row section">
-        <div className="col-md-6" >
+      <div className="row section mt-1">
+        <div className="col-md-6">
           <div className="video-container">
-          <video className="video-responsive" id="vid1" 
-          ref={videoRef}
-           controls
-           playsinline
-           webkit-playsinline 
-           x5-playsinline 
-           loop
-           muted
-           >
-          <source src={videodispatch} type="video/mp4" />
-         
-          Your browser does not support the video tag.
-        </video>     
-    </div>
-      </div>
-        <div className="col-md-6 empower align-self-center elements" >
-          <h2>{titlesmall}<span className="thin"> {titlesmall1} </span><br></br><span> {titlesmall2}
-            <span className="thin"> {titlesmall3} </span></span></h2>
+            <video 
+              className="video-responsive" 
+              id="vid1" 
+              ref={videoRef}
+              controls
+              playsInline
+              webkit-playsinline
+              x5-playsinline
+              loop
+              muted
+            >
+              {videodispatch && (
+                <source src={videodispatch} type="video/mp4" />
+              )}
+              Your browser does not support the video tag.
+            </video>     
+          </div>
+        </div>
+        <div className="col-md-6 empower align-self-center elements">
+          <h2>
+            {titlesmall}<span className="thin"> {titlesmall1} </span>
+            <br />
+            <span> {titlesmall2}
+              <span className="thin"> {titlesmall3} </span>
+            </span>
+          </h2>
           <h2>{titlelarge}</h2>
           <p className="lead">{text}</p>
         </div>
@@ -138,7 +145,9 @@ const HomeData = () => {
     </div>
   </div>
 </section>
+
   );
 };
 
 export default HomeData;
+

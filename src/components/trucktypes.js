@@ -3,16 +3,41 @@ import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './trucktypes.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const TruckData = () => {
     const [truckTypes,SetTruckTypes] =useState([])
     const [isReadMore, setIsReadMore] = useState(true);
+    const [aosInitialized, setAosInitialized] = useState(false); 
 
    
     const toggleReadMore = () => {
       setIsReadMore(!isReadMore);
     };
   
+      
+ 
+    useEffect(() => {
+      const handleScroll = () => {
+        if (!aosInitialized) {
+          AOS.init({
+            once: true,
+            duration: 1200,
+          });
+          setAosInitialized(true);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll); 
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [aosInitialized]);
+  
+
 
     useEffect(() => {
         const fetchData = async () => {

@@ -4,9 +4,22 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./customer.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
+
 
 const CustomerData = () => {
   const [customer, setCustomer] = useState([]);
+
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+  }, []); 
 
   useEffect(() => {
     const fetchData = async () => {

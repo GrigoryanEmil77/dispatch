@@ -4,12 +4,24 @@ import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './foother.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const FootherData = () => {
   const [contacts, setContacts] = useState([]);
   const [services,SetServices] = useState([])
   const [truckTypes,SetTruckTypes] =useState([])
   const [follow,SetFollow]= useState([])
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+  }, []); 
+
   useEffect(() => {
     const fetchData = async () => {
       try {

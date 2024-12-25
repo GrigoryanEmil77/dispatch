@@ -11,25 +11,28 @@ const links = [
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
+    "Dispatch Assist is a choice for owner-operators and trucking companies looking to enhance their operations! With a dedicated team of dispatchers and logistics specialists, we are focused to keep drivers on the road while maximizing profit margins. We are committed to studying market trends and booking top-paying loads to stay competitive. Plus, our emphasis on excellent communication ensures that clients receive the quality care that they deserve."
+   
+    },
   {
     text: "Examples",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
+  "Dispatch Assist is a choice for owner-operators and trucking companies looking to enhance their operations! With a dedicated team of dispatchers and logistics specialists, we are focused to keep drivers on the road while maximizing profit margins. We are committed to studying market trends and booking top-paying loads to stay competitive. Plus, our emphasis on excellent communication ensures that clients receive the quality care that they deserve."
+    
+    },
   {
     text: "Plugin Library",
     url: "https://www.gatsbyjs.com/plugins",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
+     "Dispatch Assist is a choice for owner-operators and trucking companies looking to enhance their operations! With a dedicated team of dispatchers and logistics specialists, we are focused to keep drivers on the road while maximizing profit margins. We are committed to studying market trends and booking top-paying loads to stay competitive. Plus, our emphasis on excellent communication ensures that clients receive the quality care that they deserve."
+   
+    },
   {
     text: "Build and Host",
     url: "https://www.gatsbyjs.com/cloud",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "Our mission is to make your company grow and provide dispatch service in the USA and Canada.",
   },
 ]
 
@@ -39,7 +42,7 @@ const samplePageLinks = [
     url: "page-2",
     badge: false,
     description:
-      "A simple example of linking to another page within a Gatsby site",
+      "Our mission is to make your company grow and provide dispatch service in the USA and Canada.",
   },
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },

@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './about.css';
 import axios from 'axios';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const AboutData = () => {
   const countersRef = useRef([]);
@@ -12,6 +15,14 @@ const AboutData = () => {
     brokersnumber: 0,
     loadsnumber: 0,
   });
+
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+  }, []); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,16 +80,16 @@ const AboutData = () => {
   return (
     <section className="container py-5" id="About Us">
       <div className="text-center mb-4">
-        <h2 className="fw-bold">{titlefirst} <span> {titlesecond}</span></h2>
+        <h2 className="text  text-center elements" data-aos="flip-up">{titlefirst} <span> {titlesecond}</span></h2>
         <p className="lead mt-3">
           {text}
         </p>
       </div>
 
       <div className="row justify-content-center mt-5 elements" style={{ marginLeft: "10px" }}>
-        <div className="col elements m">
+        <div className="col elements m mt-5">
           <div className="style_moving_info_wrapper__XSE4k">
-            <div className="style_moving_info_center__yTejj">
+            <div className="style_moving_info_center__yTejj" data-aos="fade-right">
               <div>
                 <span
                   className="style_moving_info_number__vI2ou"
@@ -93,8 +104,8 @@ const AboutData = () => {
           </div>
         </div>
 
-        <div className="col elements m">
-          <div className="style_moving_info_center__yTejj">
+        <div className="col elements m mt-5">
+          <div className="style_moving_info_center__yTejj" data-aos="fade-right">
             <div>
               <span
                 className="style_moving_info_number__vI2ou"
@@ -109,8 +120,8 @@ const AboutData = () => {
           </div>
         </div>
 
-        <div className="col elements m">
-          <div className="style_moving_info_center__yTejj">
+        <div className="col elements m mt-5">
+          <div className="style_moving_info_center__yTejj" data-aos="fade-right">
             <div>
               <span
                 className="style_moving_info_number__vI2ou"

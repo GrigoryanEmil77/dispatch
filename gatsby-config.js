@@ -32,8 +32,9 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.ico`, 
+        display: `standalone`,
+        icon: `src/images/favicon-16x16.png`
+
       },
     },
   ],

@@ -58,7 +58,7 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
   <h2 className="text  text-center elements" data-aos="flip-up"> {titlefirst} <span> {titlesecond} </span> </h2>
   <div className="row justify-content-center mt-5  elements" >
       <div className="col elements  m" id="new">
-          <div className="new text-center elements" id="Load"  data-aos="fade-right">
+          <div className="new text-center elements" id="LOAD SEARCH FTL/LTL"  data-aos="fade-right">
               <img src={picture1}   data-aos="fade-right" className="provide"  style={{
     WebkitUserDrag: "none",
     userDrag: "none",
@@ -73,7 +73,7 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
           </div>
       </div>
       <div className="col elements m">
-        <div className="new text-center elements" id='Book' data-aos="fade-right">
+        <div className="new text-center elements" id='RATE NEGOTIATION & BOOKING' data-aos="fade-right">
         <img src={picture2}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
@@ -81,15 +81,15 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
   }}/>                     
             
             <div className="text-container">
-       <p className='text' style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>{Booking}</p>
+       <p className='text' >{Booking}</p>
 </div>
-<div className="worktext rate" style={{marginLeft:"10px"}}>
-              <p>{Booking}</p>
+<div className="worktext" >
+              <p className='workp'>{Booking}</p>
             </div> 
           </div>
       </div>
       <div className="col elements m">
-        <div className="new text-center elements" id="Broker" data-aos="fade-right">
+        <div className="new text-center elements" id="BROKER SETUP" data-aos="fade-right">
         <img src={picture3}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
@@ -104,31 +104,23 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
           </div>
       </div>
       <div className="col elements m">
-        <div className="new text-center elements"  id="Det" data-aos="fade-right">
+        <div className="new text-center elements"  id="DETENTION LAYOVER TONU" data-aos="fade-right">
         <img src={picture4}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
     userSelect: "none",
   }}/>                   
         <div className="text-container">
-        {Detention ? (
-    
-    <>
-      <p className="text-nowrap">{Detention.split(" ")[0]}</p> 
-      <p className="text-nowrap">{Detention.split(" ").slice(1).join(" ")}</p> 
-    </>
-  ) : (  
-    <>    
-    </>
-  )}
+        <p className='text'>{Detention}</p>
+ 
 </div>
             <div className="worktext">
-              <p >{Detention}</p>
+              <p className='detp' >{Detention}</p>
             </div>
           </div>
       </div>
       <div className="col elements m">
-        <div className="new text-center elements" id="Invoicing"  data-aos="fade-right">
+        <div className="new text-center elements" id="INVOICING"  data-aos="fade-right">
         <img src={picture5}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
@@ -143,31 +135,22 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
           </div>
       </div>
       <div className="col elements m" >
-        <div className="new text-center elements" id='Factoring' data-aos="fade-right">
+        <div className="new text-center elements" id='FACTORING & INSURANCE ASSISTANCE' data-aos="fade-right">
         <img src={picture6}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
     userSelect: "none",
   }}/>                      
         <div className="text-container">
-        {Factoring ? (
-    
-    <>
-      <p className="text-nowrap">{Factoring.split(" ")[0]}</p> 
-      <p className="text-nowrap">{Factoring.split(" ").slice(1).join(" ")}</p> 
-    </>
-  ) : (   
-    <>    
-    </>
-  )}
+        <p className="text">{Factoring} </p>
 </div>
-            <div className="worktext" style={{marginRight:"45px"}}>
-              <p>{Factoring}</p>
+            <div className="worktext">
+              <p className='newp'>{Factoring}</p>
             </div>
           </div>
       </div>
       <div className="col elements m">
-        <div className="new text-center elements" id='Sup' data-aos="fade-right">
+        <div className="new text-center elements" id='24/7 SUPPORT' data-aos="fade-right">
         <img src={picture7}  data-aos="fade-right" className="provide"   style={{
     WebkitUserDrag: "none",
     userDrag: "none",
