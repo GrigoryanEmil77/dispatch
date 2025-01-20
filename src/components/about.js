@@ -6,7 +6,6 @@ import axios from 'axios';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const AboutData = () => {
   const countersRef = useRef([]);
   const [abouts, setAbouts] = useState([]);
@@ -16,13 +15,12 @@ const AboutData = () => {
     loadsnumber: 0,
   });
 
-
   useEffect(() => {
     AOS.init({
       once: true,
       duration: 1200,
     });
-  }, []); 
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -62,16 +60,44 @@ const AboutData = () => {
 
     updateCount();
   };
-
   useEffect(() => {
+    if (
+      number.carriersnumber !== 0 ||
+      number.brokersnumber !== 0 ||
+      number.loadsnumber !== 0
+    ) {
     
-    if (number.carriersnumber !== 0 || number.brokersnumber !== 0 || number.loadsnumber !== 0) {
-      countersRef.current.forEach((counter, index) => {
-        const target = parseInt(counter.getAttribute('data-target'), 10);
-        animateCounter(counter, target);
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = parseInt(counter.getAttribute("data-target"), 10);
+            animateCounter(counter, target); 
+            observer.unobserve(counter); 
+          }
+        });
+      };
+  
+      
+      const observerOptions = {
+        root: null, 
+        threshold: 0.1, 
+      };
+  
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+      countersRef.current.forEach((counter) => {
+        if (counter) {
+          observer.observe(counter);
+        }
       });
+  
+      return () => {
+        observer.disconnect();
+      };
     }
   }, [number]); 
+  
 
   const { titlefirst = "", titlesecond = "", text = "", 
           carrierstext = "", brokerstext = "", loadstext = "" } =
@@ -80,8 +106,8 @@ const AboutData = () => {
   return (
     <section className="container py-5" id="About Us">
       <div className="text-center mb-4">
-        <h2 className="text  text-center elements" data-aos="flip-up">{titlefirst} <span> {titlesecond}</span></h2>
-        <p className="lead mt-3">
+        <h2 className="text text-center elements" data-aos="flip-up">{titlefirst} <span> {titlesecond}</span></h2>
+        <p className="lead mt-3" data-aos="flip-up">
           {text}
         </p>
       </div>

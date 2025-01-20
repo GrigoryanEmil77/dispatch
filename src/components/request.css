@@ -12,7 +12,7 @@
     height: 42px !important;
   
   }
-  .form-control.text{
+  .form-control.txt{
     height: 85px !important;
   }
   input[type="text"]:focus,
@@ -130,9 +130,7 @@
   .thin{
     font-size: 47px;
     font-family:initial !important;
-    
    }
-   
    .col-md-6.empower p{
     font-weight: 600;
     color:white; 
@@ -144,25 +142,15 @@
     padding: 0;
     width: 600px;
   }
- 
-  
-  
   } 
-  
   @media (max-width: 767px) {
-   
- 
     .next {
         padding: 0;
         margin: 0;
       }
-  
   }
-
-  
   @media (max-width: 500px) {
-   
-  
+
     .col.elements.m {
       margin-top:1rem;
   }  
@@ -178,21 +166,16 @@
         align-items: center;
         justify-content: center; 
        }
-
-    
     .new.text-center.elements{
       display: flex;
       align-items: center;
       margin-left: 15px;
-     
     
     }
     .text-container {
    
      display: none;
   }
-
-
       .next {
         display: flex;
         justify-content: center;
@@ -201,16 +184,17 @@
         min-width: 100%;
       
       }
-   
-    
     .col.elements.m {
         margin-top:1rem;
     }
-
       .review-card-body {
         height: 390px !important; 
       }
     }
+   
+   
+
+   
+    
   
-        
     

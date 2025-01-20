@@ -32,7 +32,8 @@ const links = [
     text: "Build and Host",
     url: "https://www.gatsbyjs.com/cloud",
     description:
-      "Our mission is to make your company grow and provide dispatch service in the USA and Canada.",
+    "Dispatch Assist is a choice for owner-operators and trucking companies looking to enhance their operations! With a dedicated team of dispatchers and logistics specialists, we are focused to keep drivers on the road while maximizing profit margins. We are committed to studying market trends and booking top-paying loads to stay competitive. Plus, our emphasis on excellent communication ensures that clients receive the quality care that they deserve."
+   
   },
 ]
 
@@ -42,7 +43,8 @@ const samplePageLinks = [
     url: "page-2",
     badge: false,
     description:
-      "Our mission is to make your company grow and provide dispatch service in the USA and Canada.",
+    "Dispatch Assist is a choice for owner-operators and trucking companies looking to enhance their operations! With a dedicated team of dispatchers and logistics specialists, we are focused to keep drivers on the road while maximizing profit margins. We are committed to studying market trends and booking top-paying loads to stay competitive. Plus, our emphasis on excellent communication ensures that clients receive the quality care that they deserve."
+   
   },
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },

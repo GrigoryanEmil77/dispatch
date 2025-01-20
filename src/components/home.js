@@ -72,7 +72,6 @@ const HomeData = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/upload-videoheader');
-        console.log(response.data, "data")
        
         setVideos(response.data);
       } catch (error) {

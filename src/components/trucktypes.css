@@ -1,34 +1,10 @@
 
- .thin{
-    font-size: 60px;
-    font-family:initial !important;
-   }
-  
-  .col-md-6.empower h2{
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
-      color:white;
-      font-size: 45px; 
-  
-    }
-    .col-md-6.empower p{
-      /* font-weight: 600;
-      font-size: 18px; */
-      color:white; 
-   
-     
-    }
-  .container.elements.shift-down span{
+
+.container.elements.shift-down span{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
       color: white;
       font-size: 30px;
   
-    }
-  .col-md-6.empower h2:nth-child(2){
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
-      font-size: 60px;
-      color:#ea9d17;   
-      font-weight: 900;
-   
     }
     .shift-down {
       position: relative;

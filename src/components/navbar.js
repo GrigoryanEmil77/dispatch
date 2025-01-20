@@ -16,6 +16,22 @@ const Navbar = () => {
   const [truckTypes,SetTruckTypes] =useState([])
   const [isOffcanvasOpen, setOffcanvasOpen] = useState(false);
   const [isSubmenuOpen, setSubmenuOpen] = useState(false);
+    
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+    
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
   
   useEffect(() => {
     AOS.init({
@@ -75,7 +91,7 @@ const Navbar = () => {
   };
 
 
-  
+
   
   const handleScroll = (e, sectionId) => {
     e.preventDefault();

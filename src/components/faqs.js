@@ -32,7 +32,7 @@ const FAQ = () => {
   
 
   const { titlefirst = "",titlesecond="",  questions1="",questions2="",questions3="",questions4="",
-          questions5="", answer1="",answer2="",answer3="",answer4="",answer5="" } =
+          questions5="",  questions6="", answer1="",answer2="",answer3="",answer4="",answer5="",answer6="" } =
           questions.length > 0 ? questions[0] : {};
 
   const toggleFAQ = (id) => {
@@ -74,6 +74,8 @@ const FAQ = () => {
             question: questions5,
             answer:answer5
         },
+        
+   
         ].map((faq) => (
           <div key={faq.id} className="faq_accordion" data-aos="fade-right" >
             <div className="faq_question" data-aos="fade-right">
@@ -98,6 +100,7 @@ const FAQ = () => {
               </div>
             )}
           </div>
+          
         ))}
       </div>
     </div>

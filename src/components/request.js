@@ -182,7 +182,7 @@ return (
             </div>
             <div className="form-group mt-5 elements" data-aos="fade-right">
               <textarea
-                className="form-control text"
+                className="form-control txt"
                 name="message"
                 id="message"
                 placeholder="Additional Information:"

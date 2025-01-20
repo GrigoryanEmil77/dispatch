@@ -82,7 +82,7 @@ const {titleServices="",LoadSearch="", Booking="", BrokerSetup="", Detention="",
   return (
    
 
-<footer className="text-white mt-7 pb-6 w-100 elements" style={{marginTop:"40px"}} >
+<footer className="text-white mt-7 pb-6 w-100 elements" >
   <div className="container  text-md-left elements">
       <div className="row mb-3 mt-5 elements">
           <div className="mt-5 elements" >

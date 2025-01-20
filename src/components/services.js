@@ -46,11 +46,7 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
         img.addEventListener('contextmenu', event => event.preventDefault());
       });
       
-      document.addEventListener('touchstart', function(e) {
-        if (e.target.tagName === 'IMG') {
-          e.preventDefault();
-        }
-      });
+
       
   return (
    
@@ -83,7 +79,7 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
             <div className="text-container">
        <p className='text' >{Booking}</p>
 </div>
-<div className="worktext" >
+<div className="worktext">
               <p className='workp'>{Booking}</p>
             </div> 
           </div>
@@ -142,8 +138,11 @@ picture1="", picture2="", picture3="", picture4="",picture5="",picture6="",pictu
     userSelect: "none",
   }}/>                      
         <div className="text-container">
-        <p className="text">{Factoring} </p>
+        <p className="text">{Factoring}</p>
 </div>
+
+
+
             <div className="worktext">
               <p className='newp'>{Factoring}</p>
             </div>
